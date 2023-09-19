@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 
     @GetMapping("/home")
-    @ResponseBody
-    public String home() {
-        return ("This is the landing page!");
-
-
-
-
+    public String welcome() {
+        return "home";
     }
+
+
+//    @GetMapping("/home")
+//    @ResponseBody
+//    public String home() {
+//        return ("This is the landing page!");
+
 }

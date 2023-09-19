@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="partials/header:: head"></head>
+  <!--    <meta charset="UTF-8">-->
+  <!--    <title>Title</title>-->
+
+<body>
+<form action="/roll-dice" method="post">
+  <h1>Welcome to my Dice Game!</h1>
+  <h2>Guess a Number Between 1-6 </h2>
+
+  <a href="/roll-dice/2"> Number 2 </a>
+  <a href="/roll-dice/3"> Number 3 </a>
+  <a href="/roll-dice/4"> Number 4 </a>
+  <a href="/roll-dice/5"> Number 5 </a>
+  <a href="/roll-dice/6"> Number 6 </a>
+  <a href="/roll-dice/n"> Number 1 </a>
+
+  <h1> your choice: <span th:text="${choice}"></span></h1>
+  <h1>The dice landed on:<span th:text="${result}"></span></h1>
+  <h1><span th:text="${match}"></span></h1>
+</form>
+</body>
+</html>
